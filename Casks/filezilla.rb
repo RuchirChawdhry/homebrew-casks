@@ -3,7 +3,7 @@ require 'json'
 require 'uri'
 
 
-cask 'audacity' do
+cask 'filezilla' do
     version '3.48.0'
     sha256 :no_check
     
