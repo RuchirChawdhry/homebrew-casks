@@ -1,3 +1,5 @@
+![GitHub repo size](https://img.shields.io/github/repo-size/ruchirchawdhry/homebrew-casks?color=red&style=flat-square)! [GitHub](https://img.shields.io/github/license/ruchirchawdhry/homebrew-casks?color=red&style=flat-square)
+
 # homebrew-casks
 
 Additional casks for homebrew
@@ -7,4 +9,3 @@ Additional casks for homebrew
 ```bash
 brew tap ruchirchawdhry/casks
 ```
-![GitHub repo size](https://img.shields.io/github/repo-size/ruchirchawdhry/homebrew-casks?color=red&style=flat-square)![GitHub](https://img.shields.io/github/license/ruchirchawdhry/homebrew-casks?color=red&style=flat-square)
