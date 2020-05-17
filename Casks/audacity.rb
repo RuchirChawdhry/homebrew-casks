@@ -10,7 +10,7 @@ cask 'audacity' do
     sha256 '42d08496569556d22f2f22c84b9f0196ef207af1311a9089ebbfcf2af9e21922'
     
     def get_audacity_url
-        fossbub_response = nil
+        fosshub_response = nil
         uri = URI("https://api.fosshub.com/download/")
         Net::HTTP.start(uri.host, uri.port, :use_ssl => uri.scheme == 'https') do |http|
             request = Net::HTTP::Post.new(uri, 'Content-Type' => 'application/json', 'User-Agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36')
