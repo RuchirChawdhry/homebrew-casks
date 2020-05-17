@@ -4,7 +4,12 @@ require 'net/http'
 require 'json'
 require 'url'
 
-def get_audacity_url
+
+cask 'audacity' do
+    version '2.4.0'
+    sha256 '42d08496569556d22f2f22c84b9f0196ef207af1311a9089ebbfcf2af9e21922'
+    
+    def get_audacity_url
         fossbub_response = nil
         uri = URI("https://api.fosshub.com/download/")
         Net::HTTP.start(uri.host, uri.port, :use_ssl => uri.scheme == 'https') do |http|
@@ -16,16 +21,12 @@ def get_audacity_url
                 "releaseId" => "5ebfc924b441ab1ddec3fb18",
                 "source" => "CF"
             }.to_json
-            response = http.request request # Net::HTTPResponse object
+            response = http.request request
             fosshub_response = JSON.parse(response.body)
         end
         return fosshub_response['data']['url']
-end
+    end
 
-cask 'audacity' do
-    version '2.4.0'
-    sha256 '42d08496569556d22f2f22c84b9f0196ef207af1311a9089ebbfcf2af9e21922'
-    
     url get_audacity_url
     name 'Audacity'
     homepage 'https://www.audacityteam.org/'
