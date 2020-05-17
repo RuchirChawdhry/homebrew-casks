@@ -2,7 +2,7 @@
 
 require 'net/http'
 require 'json'
-require 'url'
+require 'uri'
 
 
 cask 'audacity' do
