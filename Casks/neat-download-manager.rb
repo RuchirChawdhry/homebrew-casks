@@ -1,4 +1,4 @@
-cask 'neat-download-manager' do:
+cask 'neat-download-manager' do
     version '1.1.10'
     sha256 '8290631e87c3b5f389e097eadbc17d199db0065d0506e73dde37080ac5930516'
 
